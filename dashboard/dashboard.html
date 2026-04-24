@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h3>Culinary Hub</h3>
+        <div>
+            <input type="text" id="searchInput" placeholder="Search for recipes...">
+            <button onclick="searchRecipe()">Search</button>
+        </div>
+        <button class="logout" onclick="window.location.href='../form/index.html'">Logout</button>
+    </header>
+    
+    <div class="main">
+        <div class="text">
+            <h2>Welcome to Culinary Hub!</h2>
+            <p>Discover viral recipes, level up your cooking game, and turn your kitchen into your own vibe—whether you're cooking quick meals or trying new flavors, we’ve got the tips and inspo to make every dish look good and taste amazing.</p>
+        </div>
+        <div class="image-1">
+            <img src="src/dish1-removebg-preview.png" alt="Culinary Image">
+        </div>
+    </div>
+
+    <div class="trending">
+        <h2 class="title">Today's  <span class="space"> Trending Recipes</span></h2>
+        <div class="recipe-list">
+            <div class="recipe-card" id="sinigang">
+                <div class="image">
+                <img src="src/sinigang.png" alt="sour soup">
+                </div>
+                <h3>Sinigang</h3>
+                <p>A Filipino sour soup made with tamarind, vegetables, and your choice of</p>
+                <button  class="recipe-btn">View Recipe</button>
+            </div>
+            <div class="recipe-card" id="sisig">
+                <div class="image">
+                <img src="src/sisig.png" alt="sizzling sisig">
+                </div>
+                <h3>Sisig</h3>
+                <p>A sizzling Filipino dish made from chopped pork, onions, and spices, often served</p>
+                <button  class="recipe-btn">View Recipe</button>
+            </div>
+            <div class="recipe-card" id="dubai-chewy-cookies">
+                <div class="image" >
+                <img src="src/dubai.png" alt="Dubai chewy cookies">
+                </div>
+                <h3>Dubai Chewy Cookies</h3>
+                <p>A sweet and chewy cookie made with butter, sugar, and vanilla, perfect for a quick snack.</p>
+                <button  class="recipe-btn">View Recipe</button>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <div class="more-recipes">
+    <h2 class="title">More <span class="space">Recipes</span></h2>
+
+    <div class="recipe-grid">
+
+        <div class="recipe-card" id="adobo">
+            <div class="image">
+                <img src="src/adobo.png" alt="Adobo">
+            </div>
+            <h3>Adobo</h3>
+            <p>Classic Filipino soy sauce and vinegar chicken dish.</p>
+            <button class="recipe-btn">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" id="pancit">
+            <div class="image">
+                <img src="src/pancit.png" alt="Pancit">
+            </div>
+            <h3>Pancit</h3>
+            <p>Filipino noodle dish often served during celebrations.</p>
+            <button class="recipe-btn">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" id="kare-kare">
+            <div class="image">
+                <img src="src/kare-kare.png" alt="Kare Kare">
+            </div>
+            <h3>Kare-Kare</h3>
+            <p>Peanut-based stew with oxtail and vegetables.</p>
+            <button class="recipe-btn">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" id="halo-halo">
+            <div class="image">
+                <img src="src/halo-halo.png" alt="Halo Halo">
+            </div>
+            <h3>Halo-Halo</h3>
+            <p>Popular Filipino dessert with crushed ice and sweets.</p>
+            <button class="recipe-btn">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" id="lechon">
+            <div class="image">
+                <img src="src/lechon.png" alt="Lechon">
+            </div>
+            <h3>Lechon</h3>
+            <p>Roasted whole pig, crispy skin and juicy meat.</p>
+            <button class="recipe-btn">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" id="lumpia">
+            <div class="image">
+                <img src="src/lumpia.png" alt="Lumpia">
+            </div>
+            <h3>Lumpia</h3>
+            <p>Filipino spring rolls filled with meat and vegetables.</p>
+            <button class="recipe-btn">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" id="tinola">
+            <div class="image">
+                <img src="src/tinola.png" alt="Tinola">
+            </div>
+            <h3>Tinola</h3>
+            <p>Chicken soup with ginger, papaya, and chili leaves.</p>
+            <button class="recipe-btn">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" id="bicol-express">
+            <div class="image">
+                <img src="src/bicol-express.png" alt="Bicol Express">
+            </div>
+            <h3>Bicol Express</h3>
+            <p>Spicy pork dish cooked in coconut milk and chili.</p>
+            <button class="recipe-btn">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" id="tapsilog">
+            <div class="image">
+                <img src="src/tapsilog.png" alt="Tapsilog">
+            </div>
+            <h3>Tapsilog</h3>
+            <p>Beef tapa served with garlic rice and fried egg.</p>
+            <button class="recipe-btn">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" id="batchoy">
+            <div class="image">
+                <img src="src/batchoy.png" alt="batchoy">
+            </div>
+            <h3>Batchoy</h3>
+            <p>Rich noodle soup with pork, liver, and broth.</p>
+            <button class="recipe-btn">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" id="puto">
+            <div class="image">
+                <img src="src/puto.png" alt="Puto">
+            </div>
+            <h3>Puto</h3>
+            <p>Soft steamed rice cakes, often eaten with savory dishes.</p>
+            <button class="recipe-btn">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" id="bibingka">
+            <div class="image">
+                <img src="src/bibingka.png" alt="Bibingka">
+            </div>
+            <h3>Bibingka</h3>
+            <p>Traditional rice cake baked with coconut and eggs.</p>
+            <button class="recipe-btn">View Recipe</button>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <h3>Culinary Hub</h3>
+        <p>Discover, cook, and enjoy amazing recipes every day.</p>
+
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Trending</a>
+            <a href="#">Recipes</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <p class="copy">© 2026 Culinary Hub. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

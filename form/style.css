@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("food.png") no-repeat center center/cover;
+    text-align: center;
+}
+
+.card {
+    width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: anime 0.6s ease-out forwards;
+}
+
+@keyframes anime {
+    0% {
+        transform: translate(-50%, 60%);
+        opacity: 0;
+    }
+    60% {
+        transform: translate(-50%, -55%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-register {
+    background: #3a7d44;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.btn-register:hover {
+    background: #2f6436;
+    transform: translateY(-2px);
+}
+
+.divider {
+    margin: 15px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.btn-login {
+    background: transparent;
+    border: 2px solid #3a7d44;
+    color: #3a7d44;
+}
+
+.btn-login:hover {
+    background: #3a7d44;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
